@@ -1,0 +1,2043 @@
+/* SETEAR ESTILOS POR DEFECTO */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* DEFINIMOS VARIABLES DE MARCA */
+:root{
+    --color-primario: #6644B8;
+    --color-secundario: #bb00bd;
+    --color-fondoA : #221039;
+    --color-fondoB : #37274b;
+}
+
+/* ESTILOS PAGINA DE INICIO */
+#cont-inicio{
+    width: 100%;
+    max-width: 430px;
+    min-height: 100vh;
+    margin: 0 auto;
+    background: url("../img/home-img.png") var(--color-fondoA);
+    text-align: center;
+    padding-top: 415px;
+}
+
+#cont-inicio p{
+    color: #fff;
+    font-size: 18px;
+    padding: 0 60px;
+}
+
+.btn-principal{
+    padding: 14px 40px;
+    background: var(--color-primario);
+    color: #fff;
+    font-size: 20px;
+    border-radius: 10px;
+    display: block;
+    max-width: 90%;
+    margin: 70px auto 10px;
+    text-decoration: none;
+}
+
+.btn-secundario{
+    padding: 14px 40px;
+    background: var(--color-fondoB);
+    color: #fff;
+    font-size: 20px;
+    border-radius: 10px;
+    display: block;
+    max-width: 90%;
+    margin: 20px auto 0;
+    text-decoration: none;
+}
+
+/* ESTILOS REGISTRO */
+#cont-registro{
+    width: 100%;
+    max-width: 430px;
+    min-height: 100vh;
+    margin: 0 auto;
+    background: url("../img/register-img.png") var(--color-fondoA);
+    text-align: center;
+    padding-top: 200px;
+}
+
+#cont-registro p{
+    color: #fff;
+    font-size: 18px;
+    padding: 0 60px;
+}
+
+#cont-registro form{
+    width: 90%;
+    margin: 40px auto 0;
+
+}
+
+#cont-registro form input{
+    display: block;
+    width: 100%;
+    padding: 14px 20px;
+    border: 2px solid #fff;
+    background: transparent;
+    color: #fff;
+    margin: 10px 0;
+    border-radius: 8px;
+    font-size: 20px;
+
+}
+
+/* ESTILOS HOME */
+
+#cont-home{
+    width: 100%;
+    max-width: 430px;
+    min-height: 100vh;
+    height: 900px;
+    margin: 0 auto;
+    background: var(--color-fondoA);
+    position: relative;
+}
+
+#cont-home .header{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 20px;
+}
+
+#cont-home .header img{
+    width: 50px;
+
+}
+
+#cont-home .header button{
+    background: none;
+    border: none;
+
+}
+
+#cont-home .header a:nth-child(3) img {
+    border-radius: 50%;
+}
+
+#cont-home .filtros{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    background: var(--color-fondoB);
+    border: 2px solid var(--color-primario);
+    border-radius: 12px;
+}
+
+#cont-home .filtros button{
+    background: transparent;
+    padding: 12px 10px;
+    width: 33.3%;
+    border-radius: 8px;
+    border-color: transparent;
+    color: #fff;
+}
+
+#cont-home .filtros button.active{
+    background: var(--color-primario);
+    font-weight: 600;
+}
+
+#copy-category{
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.cont-aventuras{
+    position: absolute;
+    padding-left: 20px;
+    width: 95%;
+    margin: 0 auto;
+    z-index: 99;
+}
+
+.cont-animadas{
+    position: absolute;
+    padding-left: 20px;
+    width: 95%;
+    margin: 0 auto;
+    z-index: -9;
+}
+
+.cont-animadas h2{
+    color: #fff;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.cont-animadas hr{
+    width: 140px;
+    border: 2px solid var(--color-primario);
+    margin: 4px 0 20px;
+}
+
+
+.cont-dramas{
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+    z-index: -9;
+}
+
+.cont-dramas h2{
+    color: #fff;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.cont-dramas hr{
+    width: 140px;
+    border: 2px solid var(--color-primario);
+    margin: 4px 0 20px;
+}
+
+#cont.cont1{
+    z-index: -9;
+}
+#cont.cont1-1{
+    z-index: 99;
+}
+
+
+#cont2.cont2-2{
+    z-index: 99;
+}
+#cont2.cont2{
+    z-index: -9;
+}
+
+#cont3.cont3-3{
+    z-index: 99;
+}
+#cont3.cont3{
+    z-index: -9;
+}
+
+.cont-aventuras h2{
+    color: #fff;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.cont-aventuras hr{
+    width: 140px;
+    border: 2px solid var(--color-primario);
+    margin: 4px 0 20px;
+}
+
+
+.cont-caratulas {
+    display: flex ;
+    overflow-x: scroll;
+    margin-bottom: 10px;
+}
+.caratula{
+    background: #fff;
+    border: transparent;
+    border-radius: 20px 0 20px 0 ;
+    width: 170px;
+    padding: 2px ;
+    margin-right: 10px;
+}
+.caratula img{
+    width: 160px;
+    border-radius: 20px 0 20px 0 ;
+}
+
+/* ---------------------------------- MODAL ------------------------------------------------- */
+
+#modal-pelicula.active{
+    display: block;
+}
+#modal-pelicula{
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    background: #221039f2;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+}
+
+#modal-pelicula button{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    z-index: 99;
+    background: transparent;
+    border: transparent;
+    font-size: 30px;
+    color: white;
+}
+
+#modal-pelicula .caratula-img{
+    width: 100%;
+}
+
+#modal-pelicula .btn-play{
+    width: 60px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 240px;
+    z-index: 9;
+}
+
+#modal-pelicula .btn-cerrar{
+    position: absolute;
+    right: -5px;
+    top: 10px;
+    z-index: 99;
+    background: transparent;
+    border: transparent;
+    font-size: 30px;
+    color: white;
+    width: 50px;
+}
+#modal-pelicula h2{
+    font-size: 32px;
+    color: #fff;
+    font-weight: 700;
+    margin: 20px 0;
+    display: inline-block;
+    border-bottom: 4px solid var(--color-primario);
+}
+
+#modal-pelicula p{
+    font-size: 18px;
+    color: white;
+}
+
+#modal-pelicula.activeL{
+    z-index: 99;
+    
+}
+
+
+/* ---------------------------------- MODAL ------------------------------------------------- */
+
+/* Modal 1  */
+
+
+#modal-pelicula1.active{
+    display: block;
+}
+#modal-pelicula1{
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    background: #221039f2;
+    padding: 20px;
+    width: 100%;
+}
+
+#modal-pelicula1 button{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    z-index: 99;
+    background: transparent;
+    border: transparent;
+    font-size: 30px;
+    color: white;
+}
+
+#modal-pelicula1 .caratula-img{
+    width: 100%;
+}
+
+#modal-pelicula1 .btn-play{
+    width: 60px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 240px;
+    z-index: 9;
+}
+
+#modal-pelicula1 .btn-cerrar{
+    position: absolute;
+    right: -5px;
+    top: 10px;
+    z-index: 99;
+    background: transparent;
+    border: transparent;
+    font-size: 30px;
+    color: white;
+    width: 50px;
+}
+#modal-pelicula1 h2{
+    font-size: 32px;
+    color: #fff;
+    font-weight: 700;
+    margin: 20px 0;
+    display: inline-block;
+    border-bottom: 4px solid var(--color-primario);
+}
+
+#modal-pelicula1 p{
+    font-size: 18px;
+    color: white;
+}
+
+#modal-pelicula1.activeM{
+    z-index: 99;
+    
+}
+
+/* ------ Modal2 ---------- */
+
+#modal-pelicula2.active{
+    display: block;
+}
+#modal-pelicula2{
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    background: #221039f2;
+    padding: 20px;
+    width: 100%;
+}
+
+#modal-pelicula2 button{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    z-index: 99;
+    background: transparent;
+    border: transparent;
+    font-size: 30px;
+    color: white;
+}
+
+#modal-pelicula2 .caratula-img{
+    width: 100%;
+}
+
+#modal-pelicula2 .btn-play{
+    width: 60px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 240px;
+    z-index: 9;
+}
+
+#modal-pelicula2 .btn-cerrar{
+    position: absolute;
+    right: -5px;
+    top: 10px;
+    z-index: 99;
+    background: transparent;
+    border: transparent;
+    font-size: 30px;
+    color: white;
+    width: 50px;
+}
+#modal-pelicula2 h2{
+    font-size: 32px;
+    color: #fff;
+    font-weight: 700;
+    margin: 20px 0;
+    display: inline-block;
+    border-bottom: 4px solid var(--color-primario);
+}
+
+#modal-pelicula2 p{
+    font-size: 18px;
+    color: white;
+}
+
+#modal-pelicula2.activeM{
+    z-index: 99;
+    
+}
+
+/* ------- Modal 3------- */
+
+
+#modal-pelicula3.active{
+    display: block;
+}
+#modal-pelicula3{
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    background: #221039f2;
+    padding: 20px;
+    width: 100%;
+}
+
+#modal-pelicula3 button{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    z-index: 99;
+    background: transparent;
+    border: transparent;
+    font-size: 30px;
+    color: white;
+}
+
+#modal-pelicula3 .caratula-img{
+    width: 100%;
+}
+
+#modal-pelicula3 .btn-play{
+    width: 60px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 240px;
+    z-index: 9;
+}
+
+#modal-pelicula3 .btn-cerrar{
+    position: absolute;
+    right: -5px;
+    top: 10px;
+    z-index: 99;
+    background: transparent;
+    border: transparent;
+    font-size: 30px;
+    color: white;
+    width: 50px;
+}
+#modal-pelicula3 h2{
+    font-size: 32px;
+    color: #fff;
+    font-weight: 700;
+    margin: 20px 0;
+    display: inline-block;
+    border-bottom: 4px solid var(--color-primario);
+}
+
+#modal-pelicula3 p{
+    font-size: 18px;
+    color: white;
+}
+
+#modal-pelicula3.activeM{
+    z-index: 99;
+    
+}
+
+/* ---- Modal 4 --- */
+
+
+#modal-pelicula4.active{
+    display: block;
+}
+#modal-pelicula4{
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    background: #221039f2;
+    padding: 20px;
+    width: 100%;
+}
+
+#modal-pelicula4 button{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    z-index: 99;
+    background: transparent;
+    border: transparent;
+    font-size: 30px;
+    color: white;
+}
+
+#modal-pelicula4 .caratula-img{
+    width: 100%;
+}
+
+#modal-pelicula4 .btn-play{
+    width: 60px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 240px;
+    z-index: 9;
+}
+
+#modal-pelicula4 .btn-cerrar{
+    position: absolute;
+    right: -5px;
+    top: 10px;
+    z-index: 99;
+    background: transparent;
+    border: transparent;
+    font-size: 30px;
+    color: white;
+    width: 50px;
+}
+#modal-pelicula4 h2{
+    font-size: 32px;
+    color: #fff;
+    font-weight: 700;
+    margin: 20px 0;
+    display: inline-block;
+    border-bottom: 4px solid var(--color-primario);
+}
+
+#modal-pelicula4 p{
+    font-size: 18px;
+    color: white;
+}
+
+#modal-pelicula4.activeM{
+    z-index: 99;
+    
+}
+
+/* ---- Modal 5 --- */
+
+#modal-pelicula5.active{
+    display: block;
+}
+#modal-pelicula5{
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    background: #221039f2;
+    padding: 20px;
+    width: 100%;
+}
+
+#modal-pelicula5 button{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    z-index: 99;
+    background: transparent;
+    border: transparent;
+    font-size: 30px;
+    color: white;
+}
+
+#modal-pelicula5 .caratula-img{
+    width: 100%;
+}
+
+#modal-pelicula5 .btn-play{
+    width: 60px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 240px;
+    z-index: 9;
+}
+
+#modal-pelicula5 .btn-cerrar{
+    position: absolute;
+    right: -5px;
+    top: 10px;
+    z-index: 99;
+    background: transparent;
+    border: transparent;
+    font-size: 30px;
+    color: white;
+    width: 50px;
+}
+#modal-pelicula5 h2{
+    font-size: 32px;
+    color: #fff;
+    font-weight: 700;
+    margin: 20px 0;
+    display: inline-block;
+    border-bottom: 4px solid var(--color-primario);
+}
+
+#modal-pelicula5 p{
+    font-size: 18px;
+    color: white;
+}
+
+#modal-pelicula5.activeM{
+    z-index: 99;
+    
+}
+
+/* ---- Modal 6 --- */
+
+#modal-pelicula6.active{
+    display: block;
+}
+#modal-pelicula6{
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    background: #221039f2;
+    padding: 20px;
+    width: 100%;
+}
+
+#modal-pelicula6 button{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    z-index: 99;
+    background: transparent;
+    border: transparent;
+    font-size: 30px;
+    color: white;
+}
+
+#modal-pelicula6 .caratula-img{
+    width: 100%;
+}
+
+#modal-pelicula6 .btn-play{
+    width: 60px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 240px;
+    z-index: 9;
+}
+
+#modal-pelicula6 .btn-cerrar{
+    position: absolute;
+    right: -5px;
+    top: 10px;
+    z-index: 99;
+    background: transparent;
+    border: transparent;
+    font-size: 30px;
+    color: white;
+    width: 50px;
+}
+#modal-pelicula6 h2{
+    font-size: 32px;
+    color: #fff;
+    font-weight: 700;
+    margin: 20px 0;
+    display: inline-block;
+    border-bottom: 4px solid var(--color-primario);
+}
+
+#modal-pelicula6 p{
+    font-size: 18px;
+    color: white;
+}
+
+#modal-pelicula6.activeM{
+    z-index: 99;
+    
+}
+
+/* ---- Modal 7 --- */
+
+#modal-pelicula7.active{
+    display: block;
+}
+#modal-pelicula7{
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    background: #221039f2;
+    padding: 20px;
+    width: 100%;
+}
+
+#modal-pelicula7 button{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    z-index: 99;
+    background: transparent;
+    border: transparent;
+    font-size: 30px;
+    color: white;
+}
+
+#modal-pelicula7 .caratula-img{
+    width: 100%;
+}
+
+#modal-pelicula7 .btn-play{
+    width: 60px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 240px;
+    z-index: 9;
+}
+
+#modal-pelicula7 .btn-cerrar{
+    position: absolute;
+    right: -5px;
+    top: 10px;
+    z-index: 99;
+    background: transparent;
+    border: transparent;
+    font-size: 30px;
+    color: white;
+    width: 50px;
+}
+#modal-pelicula7 h2{
+    font-size: 32px;
+    color: #fff;
+    font-weight: 700;
+    margin: 20px 0;
+    display: inline-block;
+    border-bottom: 4px solid var(--color-primario);
+}
+
+#modal-pelicula7 p{
+    font-size: 18px;
+    color: white;
+}
+
+#modal-pelicula7.activeM{
+    z-index: 99;
+    
+}
+
+/* ---- Modal 8 --- */
+
+#modal-pelicula8.active{
+    display: block;
+}
+#modal-pelicula8{
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    background: #221039f2;
+    padding: 20px;
+    width: 100%;
+}
+
+#modal-pelicula8 button{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    z-index: 99;
+    background: transparent;
+    border: transparent;
+    font-size: 30px;
+    color: white;
+}
+
+#modal-pelicula8 .caratula-img{
+    width: 100%;
+}
+
+#modal-pelicula8 .btn-play{
+    width: 60px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 240px;
+    z-index: 9;
+}
+
+#modal-pelicula8 .btn-cerrar{
+    position: absolute;
+    right: -5px;
+    top: 10px;
+    z-index: 99;
+    background: transparent;
+    border: transparent;
+    font-size: 30px;
+    color: white;
+    width: 50px;
+}
+#modal-pelicula8 h2{
+    font-size: 32px;
+    color: #fff;
+    font-weight: 700;
+    margin: 20px 0;
+    display: inline-block;
+    border-bottom: 4px solid var(--color-primario);
+}
+
+#modal-pelicula8 p{
+    font-size: 18px;
+    color: white;
+}
+
+#modal-pelicula8.activeM{
+    z-index: 99;
+    
+}
+
+/* ---- Modal 9 --- */
+
+#modal-pelicula9.active{
+    display: block;
+}
+#modal-pelicula9{
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    background: #221039f2;
+    padding: 20px;
+    width: 100%;
+}
+
+#modal-pelicula9 button{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    z-index: 99;
+    background: transparent;
+    border: transparent;
+    font-size: 30px;
+    color: white;
+}
+
+#modal-pelicula9 .caratula-img{
+    width: 100%;
+}
+
+#modal-pelicula9 .btn-play{
+    width: 60px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 240px;
+    z-index: 9;
+}
+
+#modal-pelicula9 .btn-cerrar{
+    position: absolute;
+    right: -5px;
+    top: 10px;
+    z-index: 99;
+    background: transparent;
+    border: transparent;
+    font-size: 30px;
+    color: white;
+    width: 50px;
+}
+#modal-pelicula9 h2{
+    font-size: 32px;
+    color: #fff;
+    font-weight: 700;
+    margin: 20px 0;
+    display: inline-block;
+    border-bottom: 4px solid var(--color-primario);
+}
+
+#modal-pelicula9 p{
+    font-size: 18px;
+    color: white;
+}
+
+#modal-pelicula9.activeM{
+    z-index: 99;
+    
+}
+
+/* ---- Modal 10 --- */
+
+#modal-pelicula10.active{
+    display: block;
+}
+#modal-pelicula10{
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    background: #221039f2;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+}
+
+#modal-pelicula10 button{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    z-index: 99;
+    background: transparent;
+    border: transparent;
+    font-size: 30px;
+    color: white;
+}
+
+#modal-pelicula10 .caratula-img{
+    width: 100%;
+}
+
+#modal-pelicula10 .btn-play{
+    width: 60px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 240px;
+    z-index: 9;
+}
+
+#modal-pelicula10 .btn-cerrar{
+    position: absolute;
+    right: -5px;
+    top: 10px;
+    z-index: 99;
+    background: transparent;
+    border: transparent;
+    font-size: 30px;
+    color: white;
+    width: 50px;
+}
+#modal-pelicula10 h2{
+    font-size: 32px;
+    color: #fff;
+    font-weight: 700;
+    margin: 20px 0;
+    display: inline-block;
+    border-bottom: 4px solid var(--color-primario);
+}
+
+#modal-pelicula10 p{
+    font-size: 18px;
+    color: white;
+}
+
+#modal-pelicula10.activeM{
+    z-index: 99;
+    
+}
+
+/* ---- Modal 11 --- */
+
+#modal-pelicula11.active{
+    display: block;
+}
+#modal-pelicula11{
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    background: #221039f2;
+    padding: 20px;
+    width: 100%;
+}
+
+#modal-pelicula11 button{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    z-index: 99;
+    background: transparent;
+    border: transparent;
+    font-size: 30px;
+    color: white;
+}
+
+#modal-pelicula11 .caratula-img{
+    width: 100%;
+}
+
+#modal-pelicula11 .btn-play{
+    width: 60px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 240px;
+    z-index: 9;
+}
+
+#modal-pelicula11 .btn-cerrar{
+    position: absolute;
+    right: -5px;
+    top: 10px;
+    z-index: 99;
+    background: transparent;
+    border: transparent;
+    font-size: 30px;
+    color: white;
+    width: 50px;
+}
+#modal-pelicula11 h2{
+    font-size: 32px;
+    color: #fff;
+    font-weight: 700;
+    margin: 20px 0;
+    display: inline-block;
+    border-bottom: 4px solid var(--color-primario);
+}
+
+#modal-pelicula11 p{
+    font-size: 18px;
+    color: white;
+}
+
+#modal-pelicula11.activeM{
+    z-index: 99;
+    
+}
+
+/* ---- Modal 12 --- */
+
+#modal-pelicula12.active{
+    display: block;
+}
+#modal-pelicula12{
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    background: #221039f2;
+    padding: 20px;
+    width: 100%;
+}
+
+#modal-pelicula12 button{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    z-index: 99;
+    background: transparent;
+    border: transparent;
+    font-size: 30px;
+    color: white;
+}
+
+#modal-pelicula12 .caratula-img{
+    width: 100%;
+}
+
+#modal-pelicula12 .btn-play{
+    width: 60px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 240px;
+    z-index: 9;
+}
+
+#modal-pelicula12 .btn-cerrar{
+    position: absolute;
+    right: -5px;
+    top: 10px;
+    z-index: 99;
+    background: transparent;
+    border: transparent;
+    font-size: 30px;
+    color: white;
+    width: 50px;
+}
+#modal-pelicula12 h2{
+    font-size: 32px;
+    color: #fff;
+    font-weight: 700;
+    margin: 20px 0;
+    display: inline-block;
+    border-bottom: 4px solid var(--color-primario);
+}
+
+#modal-pelicula12 p{
+    font-size: 18px;
+    color: white;
+}
+
+#modal-pelicula12.activeM{
+    z-index: 99;
+    
+}
+
+/* ---- Modal 13 --- */
+
+#modal-pelicula13.active{
+    display: block;
+}
+#modal-pelicula13{
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    background: #221039f2;
+    padding: 20px;
+    width: 100%;
+}
+
+#modal-pelicula13 button{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    z-index: 99;
+    background: transparent;
+    border: transparent;
+    font-size: 30px;
+    color: white;
+}
+
+#modal-pelicula13 .caratula-img{
+    width: 100%;
+}
+
+#modal-pelicula13 .btn-play{
+    width: 60px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 240px;
+    z-index: 9;
+}
+
+#modal-pelicula13 .btn-cerrar{
+    position: absolute;
+    right: -5px;
+    top: 10px;
+    z-index: 99;
+    background: transparent;
+    border: transparent;
+    font-size: 30px;
+    color: white;
+    width: 50px;
+}
+#modal-pelicula13 h2{
+    font-size: 32px;
+    color: #fff;
+    font-weight: 700;
+    margin: 20px 0;
+    display: inline-block;
+    border-bottom: 4px solid var(--color-primario);
+}
+
+#modal-pelicula13 p{
+    font-size: 18px;
+    color: white;
+}
+
+#modal-pelicula13.activeM{
+    z-index: 99;
+    
+}
+
+/* ---- Modal 14 --- */
+
+#modal-pelicula14.active{
+    display: block;
+}
+#modal-pelicula14{
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    background: #221039f2;
+    padding: 20px;
+    width: 100%;
+}
+
+#modal-pelicula14 button{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    z-index: 99;
+    background: transparent;
+    border: transparent;
+    font-size: 30px;
+    color: white;
+}
+
+#modal-pelicula14 .caratula-img{
+    width: 100%;
+}
+
+#modal-pelicula14 .btn-play{
+    width: 60px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 240px;
+    z-index: 9;
+}
+
+#modal-pelicula14 .btn-cerrar{
+    position: absolute;
+    right: -5px;
+    top: 10px;
+    z-index: 99;
+    background: transparent;
+    border: transparent;
+    font-size: 30px;
+    color: white;
+    width: 50px;
+}
+#modal-pelicula14 h2{
+    font-size: 32px;
+    color: #fff;
+    font-weight: 700;
+    margin: 20px 0;
+    display: inline-block;
+    border-bottom: 4px solid var(--color-primario);
+}
+
+#modal-pelicula14 p{
+    font-size: 18px;
+    color: white;
+}
+
+#modal-pelicula14.activeM{
+    z-index: 99;
+    
+}
+
+/* ---- Modal 15 --- */
+
+#modal-pelicula15.active{
+    display: block;
+}
+#modal-pelicula15{
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    background: #221039f2;
+    padding: 20px;
+    width: 100%;
+}
+
+#modal-pelicula15 button{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    z-index: 99;
+    background: transparent;
+    border: transparent;
+    font-size: 30px;
+    color: white;
+}
+
+#modal-pelicula15 .caratula-img{
+    width: 100%;
+}
+
+#modal-pelicula15 .btn-play{
+    width: 60px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 240px;
+    z-index: 9;
+}
+
+#modal-pelicula15 .btn-cerrar{
+    position: absolute;
+    right: -5px;
+    top: 10px;
+    z-index: 99;
+    background: transparent;
+    border: transparent;
+    font-size: 30px;
+    color: white;
+    width: 50px;
+}
+#modal-pelicula15 h2{
+    font-size: 32px;
+    color: #fff;
+    font-weight: 700;
+    margin: 20px 0;
+    display: inline-block;
+    border-bottom: 4px solid var(--color-primario);
+}
+
+#modal-pelicula15 p{
+    font-size: 18px;
+    color: white;
+}
+
+#modal-pelicula15.activeM{
+    z-index: 99;
+    
+}
+
+/* ---- Modal 16 --- */
+
+#modal-pelicula16.active{
+    display: block;
+}
+#modal-pelicula16{
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    background: #221039f2;
+    padding: 20px;
+    width: 100%;
+}
+
+#modal-pelicula16 button{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    z-index: 99;
+    background: transparent;
+    border: transparent;
+    font-size: 30px;
+    color: white;
+}
+
+#modal-pelicula16 .caratula-img{
+    width: 100%;
+    height: 530px;
+}
+
+#modal-pelicula16 .btn-play{
+    width: 60px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 240px;
+    z-index: 9;
+}
+
+#modal-pelicula16 .btn-cerrar{
+    position: absolute;
+    right: -5px;
+    top: 10px;
+    z-index: 99;
+    background: transparent;
+    border: transparent;
+    font-size: 30px;
+    color: white;
+    width: 50px;
+}
+#modal-pelicula16 h2{
+    font-size: 32px;
+    color: #fff;
+    font-weight: 700;
+    margin: 20px 0;
+    display: inline-block;
+    border-bottom: 4px solid var(--color-primario);
+}
+
+#modal-pelicula16 p{
+    font-size: 18px;
+    color: white;
+}
+
+#modal-pelicula16.activeM{
+    z-index: 99;
+    
+}
+
+/* ---- Modal 17 --- */
+
+#modal-pelicula17.active{
+    display: block;
+}
+#modal-pelicula17{
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    background: #221039f2;
+    padding: 20px;
+    width: 100%;
+}
+
+#modal-pelicula17 button{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    z-index: 99;
+    background: transparent;
+    border: transparent;
+    font-size: 30px;
+    color: white;
+}
+
+#modal-pelicula17 .caratula-img{
+    width: 100%;
+    height: 530px;
+}
+
+#modal-pelicula17 .btn-play{
+    width: 60px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 240px;
+    z-index: 9;
+}
+
+#modal-pelicula17 .btn-cerrar{
+    position: absolute;
+    right: -5px;
+    top: 10px;
+    z-index: 99;
+    background: transparent;
+    border: transparent;
+    font-size: 30px;
+    color: white;
+    width: 50px;
+}
+#modal-pelicula17 h2{
+    font-size: 32px;
+    color: #fff;
+    font-weight: 700;
+    margin: 20px 0;
+    display: inline-block;
+    border-bottom: 4px solid var(--color-primario);
+}
+
+#modal-pelicula17 p{
+    font-size: 18px;
+    color: white;
+}
+
+#modal-pelicula17.activeM{
+    z-index: 99;
+    
+}
+
+/* ---- Modal 18 --- */
+
+#modal-pelicula18.active{
+    display: block;
+}
+#modal-pelicula18{
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    background: #221039f2;
+    padding: 20px;
+    width: 100%;
+}
+
+#modal-pelicula18 button{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    z-index: 99;
+    background: transparent;
+    border: transparent;
+    font-size: 30px;
+    color: white;
+}
+
+#modal-pelicula18 .caratula-img{
+    width: 100%;
+    height: 530px;
+}
+
+#modal-pelicula18 .btn-play{
+    width: 60px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 240px;
+    z-index: 9;
+}
+
+#modal-pelicula18 .btn-cerrar{
+    position: absolute;
+    right: -5px;
+    top: 10px;
+    z-index: 99;
+    background: transparent;
+    border: transparent;
+    font-size: 30px;
+    color: white;
+    width: 50px;
+}
+#modal-pelicula18 h2{
+    font-size: 32px;
+    color: #fff;
+    font-weight: 700;
+    margin: 20px 0;
+    display: inline-block;
+    border-bottom: 4px solid var(--color-primario);
+}
+
+#modal-pelicula18 p{
+    font-size: 18px;
+    color: white;
+}
+
+#modal-pelicula18.activeM{
+    z-index: 99;
+    
+}
+
+/* ---- Modal 19 --- */
+
+#modal-pelicula19.active{
+    display: block;
+}
+#modal-pelicula19{
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    background: #221039f2;
+    padding: 20px;
+    width: 100%;
+}
+
+#modal-pelicula19 button{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    z-index: 99;
+    background: transparent;
+    border: transparent;
+    font-size: 30px;
+    color: white;
+}
+
+#modal-pelicula19 .caratula-img{
+    width: 100%;
+    height: 530px;
+}
+
+#modal-pelicula19 .btn-play{
+    width: 60px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 240px;
+    z-index: 9;
+}
+
+#modal-pelicula19 .btn-cerrar{
+    position: absolute;
+    right: -5px;
+    top: 10px;
+    z-index: 99;
+    background: transparent;
+    border: transparent;
+    font-size: 30px;
+    color: white;
+    width: 50px;
+}
+#modal-pelicula19 h2{
+    font-size: 32px;
+    color: #fff;
+    font-weight: 700;
+    margin: 20px 0;
+    display: inline-block;
+    border-bottom: 4px solid var(--color-primario);
+}
+
+#modal-pelicula19 p{
+    font-size: 18px;
+    color: white;
+}
+
+#modal-pelicula19.activeM{
+    z-index: 99;
+    
+}
+
+/* ---- Modal 20 --- */
+
+#modal-pelicula20.active{
+    display: block;
+}
+#modal-pelicula20{
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    background: #221039f2;
+    padding: 20px;
+    width: 100%;
+}
+
+#modal-pelicula20 button{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    z-index: 99;
+    background: transparent;
+    border: transparent;
+    font-size: 30px;
+    color: white;
+}
+
+#modal-pelicula20 .caratula-img{
+    width: 100%;
+    height: 530px;
+}
+
+#modal-pelicula20 .btn-play{
+    width: 60px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 240px;
+    z-index: 9;
+}
+
+#modal-pelicula20 .btn-cerrar{
+    position: absolute;
+    right: -5px;
+    top: 10px;
+    z-index: 99;
+    background: transparent;
+    border: transparent;
+    font-size: 30px;
+    color: white;
+    width: 50px;
+}
+#modal-pelicula20 h2{
+    font-size: 32px;
+    color: #fff;
+    font-weight: 700;
+    margin: 20px 0;
+    display: inline-block;
+    border-bottom: 4px solid var(--color-primario);
+}
+
+#modal-pelicula20 p{
+    font-size: 18px;
+    color: white;
+}
+
+#modal-pelicula20.activeM{
+    z-index: 99;
+    
+}
+
+/* ---- Modal 21 --- */
+
+#modal-pelicula21.active{
+    display: block;
+}
+#modal-pelicula21{
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    background: #221039f2;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+}
+
+#modal-pelicula21 button{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    z-index: 99;
+    background: transparent;
+    border: transparent;
+    font-size: 30px;
+    color: white;
+}
+
+#modal-pelicula21 .caratula-img{
+    width: 100%;
+}
+
+#modal-pelicula21 .btn-play{
+    width: 60px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 240px;
+    z-index: 9;
+}
+
+#modal-pelicula21 .btn-cerrar{
+    position: absolute;
+    right: -5px;
+    top: 10px;
+    z-index: 99;
+    background: transparent;
+    border: transparent;
+    font-size: 30px;
+    color: white;
+    width: 50px;
+}
+#modal-pelicula21 h2{
+    font-size: 32px;
+    color: #fff;
+    font-weight: 700;
+    margin: 20px 0;
+    display: inline-block;
+    border-bottom: 4px solid var(--color-primario);
+}
+
+#modal-pelicula21 p{
+    font-size: 18px;
+    color: white;
+}
+
+#modal-pelicula21.activeM{
+    z-index: 99;
+    
+}
+
+/* ---- Modal 22 --- */
+
+#modal-pelicula22.active{
+    display: block;
+}
+#modal-pelicula22{
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    background: #221039f2;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+}
+
+#modal-pelicula22 button{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    z-index: 99;
+    background: transparent;
+    border: transparent;
+    font-size: 30px;
+    color: white;
+}
+
+#modal-pelicula22 .caratula-img{
+    width: 100%;
+}
+
+#modal-pelicula22 .btn-play{
+    width: 60px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 240px;
+    z-index: 9;
+}
+
+#modal-pelicula22 .btn-cerrar{
+    position: absolute;
+    right: -5px;
+    top: 10px;
+    z-index: 99;
+    background: transparent;
+    border: transparent;
+    font-size: 30px;
+    color: white;
+    width: 50px;
+}
+#modal-pelicula22 h2{
+    font-size: 32px;
+    color: #fff;
+    font-weight: 700;
+    margin: 20px 0;
+    display: inline-block;
+    border-bottom: 4px solid var(--color-primario);
+}
+
+#modal-pelicula22 p{
+    font-size: 18px;
+    color: white;
+}
+
+#modal-pelicula22.activeM{
+    z-index: 99;
+    
+}
+
+/* ---- Modal 23 --- */
+
+#modal-pelicula23.active{
+    display: block;
+}
+#modal-pelicula23{
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    background: #221039f2;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+}
+
+#modal-pelicula23 button{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    z-index: 99;
+    background: transparent;
+    border: transparent;
+    font-size: 30px;
+    color: white;
+}
+
+#modal-pelicula23 .caratula-img{
+    width: 100%;
+}
+
+#modal-pelicula23 .btn-play{
+    width: 60px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 240px;
+    z-index: 9;
+}
+
+#modal-pelicula23 .btn-cerrar{
+    position: absolute;
+    right: -5px;
+    top: 10px;
+    z-index: 99;
+    background: transparent;
+    border: transparent;
+    font-size: 30px;
+    color: white;
+    width: 50px;
+}
+#modal-pelicula23 h2{
+    font-size: 32px;
+    color: #fff;
+    font-weight: 700;
+    margin: 20px 0;
+    display: inline-block;
+    border-bottom: 4px solid var(--color-primario);
+}
+
+#modal-pelicula23 p{
+    font-size: 18px;
+    color: white;
+}
+
+#modal-pelicula23.activeM{
+    z-index: 99;
+}
+
+
+
+
+/* ---------------------------------- FIN MODAL ------------------------------------------------- */
+
+#Panel{
+    border-right:5px solid var(--color-primario) ;
+    display: block;
+    color: white;
+    width: 320px;
+    height: 100%;
+    position: absolute;
+    left: -450px;
+    top: 0;
+    z-index: 999;
+    background-color: var(--color-fondoA);
+    transition: 1s;
+}
+
+#Panel button{
+    padding-left: 165px;
+    color: #bb00bd;
+    background: none;
+    border: 0;
+    font-size: 30px;
+}
+
+
+
+#Panel h2{
+    padding-left: 60px;
+    padding-top: 30px;
+    color: #ffffff;
+}
+
+#Panel hr{
+    border: 3px solid var(--color-primario);
+    margin-left: 60px;
+    width: 155px;
+}
+
+#Panel ul{
+    padding-top: 130px;
+    padding-left: 60px;
+}
+
+.nav{
+    padding-top: 20px;
+    color: white;
+    background: none;
+    border: 0;
+}
+
+.menu{
+    padding-left: 125px;
+}
+
+.menu img{
+   width: 50px;
+}
+
+#Panel ul a{
+    text-decoration: none;
+    display: block;
+    background-color: transparent;
+    margin: 10px 0;
+    font-size: 20px;
+    transition: 1s;
+    color: #fff;
+}
+
+#Panel ul a:hover{
+    transform: scale(1.1);
+}
+
+#Panel ul a.cerrar-sesion{
+    text-decoration: none;
+    display: block;
+    background-color: transparent;
+    margin: 28px 0;
+    font-size: 20px;
+    padding-top: 60px;
+    transition: 1s;
+    color: #ffffff;
+}
+
+#Panel.activeL{
+    margin: 0 auto;
+    left: 0px;
+    
+}
+

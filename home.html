@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CINESCAPE | INICIO</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <div id="Panel">
+        <div class="nav">
+        
+            <div class="menu">
+                <button onclick="PanelL()"><img src="img/menu.png" alt=""></button>
+            </div>
+
+        <h2>Editar mi Cuenta</h2><hr>
+
+        </div>
+
+        <ul>
+            <a href="home.html">-Home</a>
+            <a href="home.html">-Aventuras</a>
+            <a href="home.html">-Animadas</a>
+            <a href="home.html">-Drama</a>
+            <a href="home.html">-Comedia</a>
+            <a href="home.html">-Ficcion</a>
+            <a href="home.html">-Naciaonales</a>
+            <a class="cerrar-sesion" href="index.html">Cerrar Sesion</a>
+        </ul>
+    </div>
+    <section id="cont-home">
+        <div class="header">
+            <button onclick="PanelL()"><img src="img/menu.png" alt=""></button>
+            <a href="index.html"><img src="img/icon-logo.png" alt="Icon Logo"></a>
+            <a href="home.html"><img src="img/user.png" alt="Icon User"></a>
+        </div>
+        <div class="filtros">
+            <button id="aventura" onclick="cont()">Aventuras</button>
+            <button id="animada" onclick="cont2()">Animadas</button>
+            <button id="drama" onclick="cont3()">Drama</button>
+        </div>
+
+        <p id="copy-category">
+            Descubre emocionantes peliculas de aventura llenas de acción, peligro y exóticos lugares en CINESCAPE
+        </p>
+
+        <div class="cont-aventuras" id="cont">
+            <h2>Estrenos: </h2>
+            <hr>
+            <div class="cont-caratulas" >
+                <button class="caratula" onclick="Modal()"> <img src="img/guardianes3.jpg"  alt="Guardianes de la Galaxia"></button>
+                <button class="caratula" onclick="Modal1()"> <img src="img/flash.jpg" alt="Flash"></button>
+                <button class="caratula" onclick="Modal2()"> <img src="img/megalodon.jpg" alt="Flash"></button>
+                <button class="caratula" onclick="Modal3()"> <img src="img/lasirenita.jpg" alt="Flash"></button>
+                
+            </div>
+            <h2>Proximamente: </h2>
+            <hr>
+            <div class="cont-caratulas">
+                <button class="caratula" onclick="Modal4()"> <img src="img/dungeons.jpg" alt="Flash"></button>
+                <button class="caratula" onclick="Modal5()"> <img src="img/shazam2.jpg" alt="Megalodon"></button>
+                <button class="caratula" onclick="Modal6()"> <img src="img/fabelman_drama.jpg" alt="Barbie"></button>
+                <button class="caratula" onclick="Modal7()"> <img src="img/tigerapprentice.jpg" alt="Barbie"></button>
+            </div>
+        </div>
+
+        <div class="cont-animadas" id="cont2">
+            <h2>Estrenos: </h2>
+            <hr>
+            <div class="cont-caratulas">
+                <button class="caratula" onclick="Modal8()"> <img src="img/chicken_run_dawn_of_the_nugget_ver9.jpg"  alt="Guardianes de la Galaxia"></button>
+                <button class="caratula" onclick="Modal9()"> <img src="img/mariobros.jpg" alt="Mario bros"></button>
+                <button class="caratula" onclick="Modal10()"> <img src="img/Spider_Man_Across_the_Spider_Verse.jpg" alt="Flash"></button>
+                <button class="caratula" onclick="Modal11()"> <img src="img/Craig_of_the_Creek_Key_Art.jpg" alt="Flash"></button>
+
+            </div>
+            <h2>Proximamente: </h2>
+            <hr>
+            <div class="cont-caratulas">
+                <button class="caratula" onclick="Modal12()"> <img src="img/Trolls_3.jpg" alt="Flash"></button>
+                <button class="caratula" onclick="Modal13()"> <img src="img/Elemental.jpg" alt="Megalodon"></button>
+                <button class="caratula" onclick="Modal14()"> <img src="img/Gilgamesh-poster.jpg" alt="Barbie"></button>
+                <button class="caratula" onclick="Modal15()"> <img src="img/migration.jpg" alt="Barbie"></button>
+            </div>
+        </div>
+
+        <div class="cont-dramas" id="cont3">
+            <h2>Estrenos: </h2>
+            <hr>
+            <div class="cont-caratulas">
+                <button class="caratula" onclick="Modal16()"> <img src="img/fabelman_drama.jpg"  alt="Guardianes de la Galaxia"></button>
+                <button class="caratula" onclick="Modal17()"> <img src="img/killersflowermoon_drama.jpg" alt="Mario bros"></button>
+                <button class="caratula" onclick="Modal18()"> <img src="img/Napoleon_drama.jpg" alt="Flash"></button>
+                <button class="caratula" onclick="Modal19()"> <img src="img/the_whale_drama.jpg" alt="Flash"></button>
+            </div>
+            <h2>Proximamente: </h2>
+            <hr>
+            <div class="cont-caratulas">
+                <button class="caratula" onclick="Modal20()"> <img src="img/oppenheimer_drama.jpg" alt="Flash"></button>
+                <button class="caratula" onclick="Modal21()"> <img src="img/wonka_drama.jpg" alt="Megalodon"></button>
+                <button class="caratula" onclick="Modal22()"> <img src="img/tar_drama.jpg" alt="Flash"></button>
+                <button class="caratula" onclick="Modal23()"> <img src="img/till_drama.jpg" alt="Barbie"></button>
+            </div>
+        </div>
+
+    <div id="modal-pelicula">
+        <button onclick="Modal()" class="btn-cerrar">X</button>
+        <img src="img/guardianes3.jpg" class="caratula-img">
+        <img src="img/boton_play1.png" class="btn-play">
+        <h2>Guardianes </h2>
+        <p>Estreno: 18/03/2024</p>
+        <p>Accion</p>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae a, culpa perspiciatis quisquam enim, quas facilis libero ab iusto velit porro eaque nihil maxime beatae. Repellat fugit culpa consectetur nobis.Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit recusandae inventore nesciunt,</p>
+    </div> 
+
+    <div id="modal-pelicula1">
+        <button onclick="Modal1()" class="btn-cerrar">X</button>
+        <img src="img/flash.jpg" class="caratula-img">
+        <img src="img/boton_play1.png" class="btn-play">
+        <h2>flash </h2>
+        <p>Estreno: 18/04/2024</p>
+        <p>Accion</p>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae a, culpa perspiciatis quisquam enim, quas facilis libero ab iusto velit porro eaque nihil maxime beatae. Repellat fugit culpa consectetur nobis.Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit recusandae inventore nesciunt,</p>
+    </div>
+
+    <div id="modal-pelicula2">
+        <button onclick="Modal2()" class="btn-cerrar">X</button>
+        <img src="img/megalodon.jpg" class="caratula-img">
+        <img src="img/boton_play1.png" class="btn-play">
+        <h2>Megalodon </h2>
+        <p>Estreno: 19/05/2024</p>
+        <p>Accion</p>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae a, culpa perspiciatis quisquam enim, quas facilis libero ab iusto velit porro eaque nihil maxime beatae. Repellat fugit culpa consectetur nobis.Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit recusandae inventore nesciunt,</p>
+    </div> 
+
+    <div id="modal-pelicula3">
+        <button onclick="Modal3()" class="btn-cerrar">X</button>
+        <img src="img/lasirenita.jpg" class="caratula-img">
+        <img src="img/boton_play1.png" class="btn-play">
+        <h2>La sirenita </h2>
+        <p>Estreno: 19/06/2024</p>
+        <p>Accion</p>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae a, culpa perspiciatis quisquam enim, quas facilis libero ab iusto velit porro eaque nihil maxime beatae. Repellat fugit culpa consectetur nobis.Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit recusandae inventore nesciunt,</p>
+    </div> 
+
+    <div id="modal-pelicula4">
+        <button onclick="Modal4()" class="btn-cerrar">X</button>
+        <img src="img/dungeons.jpg" class="caratula-img">
+        <img src="img/boton_play1.png" class="btn-play">
+        <h2>Dungeons </h2>
+        <p>Estreno: 19/05/2024</p>
+        <p>Accion</p>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae a, culpa perspiciatis quisquam enim, quas facilis libero ab iusto velit porro eaque nihil maxime beatae. Repellat fugit culpa consectetur nobis.Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit recusandae inventore nesciunt,</p>
+    </div> 
+
+    <div id="modal-pelicula5">
+        <button onclick="Modal5()" class="btn-cerrar">X</button>
+        <img src="img/shazam2.jpg" class="caratula-img">
+        <img src="img/boton_play1.png" class="btn-play">
+        <h2>Shazma 2 </h2>
+        <p>Estreno: 19/10/2024</p>
+        <p>Accion</p>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae a, culpa perspiciatis quisquam enim, quas facilis libero ab iusto velit porro eaque nihil maxime beatae. Repellat fugit culpa consectetur nobis.Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit recusandae inventore nesciunt,</p>
+    </div> 
+
+    <div id="modal-pelicula6">
+        <button onclick="Modal6()" class="btn-cerrar">X</button>
+        <img src="img/fabelman_drama.jpg" class="caratula-img">
+        <img src="img/boton_play1.png" class="btn-play">
+        <h2> Los Fabelman  </h2>
+        <p>Estreno: 10/06/2024</p>
+        <p>Accion</p>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae a, culpa perspiciatis quisquam enim, quas facilis libero ab iusto velit porro eaque nihil maxime beatae. Repellat fugit culpa consectetur nobis.Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit recusandae inventore nesciunt,</p>
+    </div> 
+
+    <div id="modal-pelicula7">
+        <button onclick="Modal7()" class="btn-cerrar">X</button>
+        <img src="img/tigerapprentice.jpg" class="caratula-img">
+        <img src="img/boton_play1.png" class="btn-play">
+        <h2> Los Fabelman  </h2>
+        <p>Estreno: 11/06/2024</p>
+        <p>Accion</p>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae a, culpa perspiciatis quisquam enim, quas facilis libero ab iusto velit porro eaque nihil maxime beatae. Repellat fugit culpa consectetur nobis.Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit recusandae inventore nesciunt,</p>
+    </div> 
+
+    <div id="modal-pelicula8">
+        <button onclick="Modal8()" class="btn-cerrar">X</button>
+        <img src="img/chicken_run_dawn_of_the_nugget_ver9.jpg" class="caratula-img">
+        <img src="img/boton_play1.png" class="btn-play">
+        <h2> Chicken Run  </h2>
+        <p>Estreno: 11/06/2024</p>
+        <p>Accion</p>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae a, culpa perspiciatis quisquam enim, quas facilis libero ab iusto velit porro eaque nihil maxime beatae. Repellat fugit culpa consectetur nobis.Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit recusandae inventore nesciunt,</p>
+    </div>
+    
+    <div id="modal-pelicula9">
+        <button onclick="Modal9()" class="btn-cerrar">X</button>
+        <img src="img/mariobros.jpg" class="caratula-img">
+        <img src="img/boton_play1.png" class="btn-play">
+        <h2> Mario Bros  </h2>
+        <p>Estreno: 12/06/2024</p>
+        <p>Accion</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae a, culpa perspiciatis quisquam enim, quas facilis libero ab iusto velit porro eaque nihil maxime beatae. Repellat fugit culpa consectetur nobis.Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit recusandae inventore nesciunt,</p>
+    </div> 
+
+    <div id="modal-pelicula10">
+        <button onclick="Modal10()" class="btn-cerrar">X</button>
+        <img src="img/Spider_Man_Across_the_Spider_Verse.jpg" class="caratula-img">
+        <img src="img/boton_play1.png" class="btn-play">
+        <h2> SpiderMan  </h2>
+        <p>Estreno: 13/06/2024</p>
+        <p>Accion</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae a, culpa perspiciatis quisquam enim, quas facilis libero ab iusto velit porro eaque nihil maxime beatae. Repellat fugit culpa consectetur nobis.Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit recusandae inventore nesciunt,</p>
+    </div> 
+
+    <div id="modal-pelicula11">
+        <button onclick="Modal11()" class="btn-cerrar">X</button>
+        <img src="img/Craig_of_the_Creek_Key_Art.jpg" class="caratula-img">
+        <img src="img/boton_play1.png" class="btn-play">
+        <h2> Craig of the creek   </h2>
+        <p>Estreno: 14/06/2024</p>
+        <p>Accion</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae a, culpa perspiciatis quisquam enim, quas facilis libero ab iusto velit porro eaque nihil maxime beatae. Repellat fugit culpa consectetur nobis.Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit recusandae inventore nesciunt,</p>
+    </div> 
+
+    <div id="modal-pelicula12">
+        <button onclick="Modal12()" class="btn-cerrar">X</button>
+        <img src="img/Trolls_3.jpg" class="caratula-img">
+        <img src="img/boton_play1.png" class="btn-play">
+        <h2> Trolls 3 </h2>
+        <p>Estreno: 15/06/2024</p>
+        <p>Accion</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae a, culpa perspiciatis quisquam enim, quas facilis libero ab iusto velit porro eaque nihil maxime beatae. Repellat fugit culpa consectetur nobis.Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit recusandae inventore nesciunt,</p>
+    </div>
+    
+    <div id="modal-pelicula13">
+        <button onclick="Modal13()" class="btn-cerrar">X</button>
+        <img src="img/Elemental.jpg" class="caratula-img">
+        <img src="img/boton_play1.png" class="btn-play">
+        <h2> Elemental  </h2>
+        <p>Estreno: 18/06/2024</p>
+        <p>Accion</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae a, culpa perspiciatis quisquam enim, quas facilis libero ab iusto velit porro eaque nihil maxime beatae. Repellat fugit culpa consectetur nobis.Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit recusandae inventore nesciunt,</p>
+    </div>
+
+    <div id="modal-pelicula14">
+        <button onclick="Modal14()" class="btn-cerrar">X</button>
+        <img src="img/Gilgamesh-poster.jpg" class="caratula-img">
+        <img src="img/boton_play1.png" class="btn-play">
+        <h2> Gilgamesh Poster  </h2>
+        <p>Estreno: 28/06/2024</p>
+        <p>Accion</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae a, culpa perspiciatis quisquam enim, quas facilis libero ab iusto velit porro eaque nihil maxime beatae. Repellat fugit culpa consectetur nobis.Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit recusandae inventore nesciunt,</p>
+    </div>
+
+    <div id="modal-pelicula15">
+        <button onclick="Modal15()" class="btn-cerrar">X</button>
+        <img src="img/migration.jpg" class="caratula-img">
+        <img src="img/boton_play1.png" class="btn-play">
+        <h2> Migration  </h2>
+        <p>Estreno: 28/10/2024</p>
+        <p>Accion</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae a, culpa perspiciatis quisquam enim, quas facilis libero ab iusto velit porro eaque nihil maxime beatae. Repellat fugit culpa consectetur nobis.Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit recusandae inventore nesciunt,</p>
+    </div>
+
+    <div id="modal-pelicula16">
+        <button onclick="Modal16()" class="btn-cerrar">X</button>
+        <img src="img/fabelman_drama.jpg" class="caratula-img">
+        <img src="img/boton_play1.png" class="btn-play">
+        <h2> Fabelman  </h2>
+        <p>Estreno: 30/10/2024</p>
+        <p>Accion</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae a, culpa perspiciatis quisquam enim, quas facilis libero ab iusto velit porro eaque nihil maxime beatae. Repellat fugit culpa consectetur nobis.Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit recusandae inventore nesciunt,</p>
+    </div>
+
+    <div id="modal-pelicula17">
+        <button onclick="Modal17()" class="btn-cerrar">X</button>
+        <img src="img/killersflowermoon_drama.jpg" class="caratula-img">
+        <img src="img/boton_play1.png" class="btn-play">
+        <h2> Killer flower moon </h2>
+        <p>Estreno: 10/06/2024</p>
+        <p>Accion</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae a, culpa perspiciatis quisquam enim, quas facilis libero ab iusto velit porro eaque nihil maxime beatae. Repellat fugit culpa consectetur nobis.Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit recusandae inventore nesciunt,</p>
+    </div>
+
+    <div id="modal-pelicula18">
+        <button onclick="Modal18()" class="btn-cerrar">X</button>
+        <img src="img/Napoleon_drama.jpg" class="caratula-img">
+        <img src="img/boton_play1.png" class="btn-play">
+        <h2> Kitback </h2>
+        <p>Estreno: 10/06/2024</p>
+        <p>Accion</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae a, culpa perspiciatis quisquam enim, quas facilis libero ab iusto velit porro eaque nihil maxime beatae. Repellat fugit culpa consectetur nobis.Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit recusandae inventore nesciunt,</p>
+    </div>
+
+    <div id="modal-pelicula19">
+        <button onclick="Modal19()" class="btn-cerrar">X</button>
+        <img src="img/the_whale_drama.jpg" class="caratula-img">
+        <img src="img/boton_play1.png" class="btn-play">
+        <h2> The Whale </h2>
+        <p>Estreno: 11/08/2024</p>
+        <p>Accion</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae a, culpa perspiciatis quisquam enim, quas facilis libero ab iusto velit porro eaque nihil maxime beatae. Repellat fugit culpa consectetur nobis.Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit recusandae inventore nesciunt,</p>
+    </div>
+
+    <div id="modal-pelicula20">
+        <button onclick="Modal20()" class="btn-cerrar">X</button>
+        <img src="img/oppenheimer_drama.jpg" class="caratula-img">
+        <img src="img/boton_play1.png" class="btn-play">
+        <h2> Oppenheimer </h2>
+        <p>Estreno: 13/06/2024</p>
+        <p>Accion</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae a, culpa perspiciatis quisquam enim, quas facilis libero ab iusto velit porro eaque nihil maxime beatae. Repellat fugit culpa consectetur nobis.Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit recusandae inventore nesciunt,</p>
+    </div>
+
+    <div id="modal-pelicula21">
+        <button onclick="Modal21()" class="btn-cerrar">X</button>
+        <img src="img/wonka_drama.jpg" class="caratula-img">
+        <img src="img/boton_play1.png" class="btn-play">
+        <h2> Wonka </h2>
+        <p>Estreno: 31/09/2024</p>
+        <p>Accion</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae a, culpa perspiciatis quisquam enim, quas facilis libero ab iusto velit porro eaque nihil maxime beatae. Repellat fugit culpa consectetur nobis.Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit recusandae inventore nesciunt,</p>
+    </div>
+
+    <div id="modal-pelicula22">
+        <button onclick="Modal22()" class="btn-cerrar">X</button>
+        <img src="img/tar_drama.jpg" class="caratula-img">
+        <img src="img/boton_play1.png" class="btn-play">
+        <h2> Blanchett Tar </h2>
+        <p>Estreno: 10/04/2024</p>
+        <p>Accion</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae a, culpa perspiciatis quisquam enim, quas facilis libero ab iusto velit porro eaque nihil maxime beatae. Repellat fugit culpa consectetur nobis.Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit recusandae inventore nesciunt,</p>
+    </div>
+
+    <div id="modal-pelicula23">
+        <button onclick="Modal23()" class="btn-cerrar">X</button>
+        <img src="img/till_drama.jpg" class="caratula-img">
+        <img src="img/boton_play1.png" class="btn-play">
+        <h2> Till </h2>
+        <p>Estreno: 20/11/2024</p>
+        <p>Accion</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae a, culpa perspiciatis quisquam enim, quas facilis libero ab iusto velit porro eaque nihil maxime beatae. Repellat fugit culpa consectetur nobis.Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit recusandae inventore nesciunt,</p>
+    </div>
+
+
+
+    
+
+    </section>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
